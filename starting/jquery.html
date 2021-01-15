@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TodoList JQuery</title>
+    <!--引入jquery.js-->
+    <script src="../js/jquery.js"></script>
+</head>
+<body>
+<div>
+    <!--V 视图-->
+    <label>
+        <input id="input" type="text"/>
+    </label>
+    <button id="btn">提交</button>
+    <ul id="list">
+
+    </ul>
+</div>
+
+<script>
+    // M 模型层，省略了ajax的交互
+    function Page() {
+
+    }
+
+    // P 控制器的代码，大量的代码在做DOM的操作
+    $.extend(Page.prototype, {
+        init: function () {
+            this.bindEvents()
+        },
+        bindEvents: function () {
+            const btn = $('#btn');
+            btn.on('click', $.proxy(this.handleBtnClick, this))
+        },
+        handleBtnClick: function () {
+            const inputElem = $("#input")
+            const inputValue = inputElem.val()
+            const ulElem = $("#list")
+            ulElem.append('<li>' + inputValue + '</li>')
+            inputElem.val('')
+        }
+    })
+    const page = new Page();
+    page.init();
+</script>
+
+</body>
+</html>

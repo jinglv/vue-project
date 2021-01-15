@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue实例</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+<div id="root">
+    <!--事件绑定，v-on:click，简写方式@click-->
+    <div @click="handleClick">
+        {{message}}
+    </div>
+    <item></item>
+</div>
+<script>
+    // 每定义一个组件也是一个vue实例，该实例可以在根实例使用
+    Vue.component('item', {
+        template: '<div>Hello item</div>'
+    })
+    // 定义一个vue实例，根实例
+    const vm = new Vue({
+        // 绑定dom
+        // el data method...都是实例属性
+        el: '#root',
+        data: {
+            message: 'hello world'
+        },
+        method: {
+            // 绑定事件的方法
+            handleClick: function () {
+                alert("hello")
+            }
+        }
+    })
+</script>
+</body>
+</html>

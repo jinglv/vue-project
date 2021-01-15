@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <!--引入vue.js-->
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    {{content}}
+</div>
+<script>
+    // JavaScript的写法
+    // var dom = document.getElementById('app');
+    // dom.innerHTML = 'Hello World';
+
+    // JavaScript操作DOM的写法，间隔2秒钟，更改内容
+    // setTimeout(function (){
+    //     dom.innerHTML = 'bye world';
+    // }, 2000)
+    const app = new Vue({
+        el: '#app',
+        data: {
+            content: 'Hello World'
+        }
+    })
+    // vue的实现， 间隔2秒钟，更改内容
+    // vue就不会关注dom的更改，而是数据的修改，更关注与数据
+    setTimeout(function () {
+        app.$data.content = 'Bye World'
+    }, 2000)
+</script>
+</body>
+</html>
