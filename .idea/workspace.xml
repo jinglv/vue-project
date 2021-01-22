@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bbf96c7-99c2-467a-aec8-03d66a1b5fa0" name="Default Changelist" comment="" />
+    <list default="true" id="4bbf96c7-99c2-467a-aec8-03d66a1b5fa0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/base/Vue中的set方法/example19.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue中的set方法/example20.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue事件绑定/example21.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue事件绑定/example22.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue事件绑定/example23.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue事件绑定/example24.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue事件绑定/example25.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue事件绑定/example26.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue事件绑定/example27.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue事件绑定/example28.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue列表渲染/example15.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue列表渲染/example16.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue列表渲染/example17.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue列表渲染/example18.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue条件渲染/example10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue条件渲染/example11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue条件渲染/example12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue条件渲染/example13.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue条件渲染/example14.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue样式绑定/example06.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue样式绑定/example07.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue样式绑定/example08.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue样式绑定/example09.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/Vue表单绑定/example29.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/example01.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/Vue实例/example01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/example02.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/Vue实例/example02.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/example03.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/Vue模板语法/example03.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/example04.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/Vue计算属性与侦听器/example04.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/example05.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/Vue计算属性与侦听器/example05.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +102,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/base/Vue表单绑定" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -80,11 +111,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/base/Vue表单绑定" />
+      <recent name="$PROJECT_DIR$/base/Vue事件绑定" />
+      <recent name="$PROJECT_DIR$/base/Vue中的set方法" />
+      <recent name="$PROJECT_DIR$/base/Vue列表渲染" />
+      <recent name="$PROJECT_DIR$/base/Vue条件渲染" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/base/Vue样式绑定" />
+      <recent name="$PROJECT_DIR$/base/Vue计算属性与侦听器" />
+      <recent name="$PROJECT_DIR$/base/Vue模板语法" />
+      <recent name="$PROJECT_DIR$/base/Vue实例" />
       <recent name="$PROJECT_DIR$/js" />
-      <recent name="$PROJECT_DIR$/starting" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -102,7 +140,9 @@
       <workItem from="1586787157254" duration="2782000" />
       <workItem from="1610433202809" duration="2029000" />
       <workItem from="1610611580709" duration="7712000" />
-      <workItem from="1610684667100" duration="2803000" />
+      <workItem from="1610684667100" duration="2906000" />
+      <workItem from="1610938910636" duration="6996000" />
+      <workItem from="1611125966235" duration="2560000" />
     </task>
     <task id="LOCAL-00001" summary="[add]增加学习示例">
       <created>1586789837666</created>

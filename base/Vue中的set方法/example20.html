@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中的set方法</title>
+    <script src="../../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div v-for="(item,index) of userInfo">
+        {{item}} --- {{index}}
+    </div>
+</div>
+<script>
+    const vm = new Vue({
+        el: "#app",
+        data: {
+            userInfo: [1, 2, 4, 5, 6, 7]
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中的条件渲染-key值</title>
+    <script src="../../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--key不同，就不会复用input内容-->
+    <div v-if="show">
+        用户名:<input key="username"/>
+    </div>
+    <div v-else="show" key="email">
+        邮箱名:<input/>
+    </div>
+</div>
+<script>
+    const vm = new Vue({
+        el: "#app",
+        data: {
+            show: false,
+        }
+    })
+</script>
+</body>
+</html>

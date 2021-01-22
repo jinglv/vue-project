@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue样式绑定--对象绑定内联样式</title>
+    <script src="../../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--点击一次，Hello World变成红色，再点击一次在变回来-->
+    <div :style="styleObj" @click="handleDivClick">
+        Hello World
+    </div>
+</div>
+<script>
+    const vm = new Vue({
+        el: "#app",
+        data: {
+            styleObj: {
+                color: "block"
+            }
+        },
+        methods: {
+            handleDivClick: function () {
+                this.styleObj.color = this.styleObj.color === "black" ? "red" : "black"
+            }
+        }
+    })
+</script>
+</body>
+</html>

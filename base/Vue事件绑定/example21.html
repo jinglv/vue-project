@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中的事件绑定</title>
+    <script src="../../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <button @click="handleClick">Button</button>
+    <!--handleClick有括号和无括号的区别-->
+    <button @click="handleClick($event, 1, 2, 3)">Button</button>
+</div>
+<script>
+    const vm = new Vue({
+        el: "#app",
+        methods: {
+            handleClick: function (e, one, two, three) {
+                console.log(e, one, two, three)
+            }
+        }
+    })
+</script>
+</body>
+</html>

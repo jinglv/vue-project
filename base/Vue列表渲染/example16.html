@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中的列表渲染-变更方法</title>
+    <script src="../../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--key:唯一的key值，不推荐使用index作为唯一key值，每个循环项上带有key值，提高性能-->
+    <div v-for="(item, index) of list" :key="item.id">
+        {{item.text}}----{{index}}
+    </div>
+</div>
+<script>
+    const vm = new Vue({
+        el: "#app",
+        data: {
+            list: [
+                {
+                    id: "0001",
+                    text: "hello"
+                },
+                {
+                    id: "0002",
+                    text: "world"
+                },
+                {
+                    id: "0003",
+                    text: "vue"
+                },
+                {
+                    id: "0004",
+                    text: "nodejs"
+                },
+                {
+                    id: "0005",
+                    text: "javascript"
+                }
+            ]
+        }
+    })
+</script>
+</body>
+</html>

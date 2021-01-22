@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue样式绑定--Class的对象绑定</title>
+    <script src="../../js/vue.js"></script>
+    <style>
+        .activated {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--点击一次，Hello World变成红色，再点击一次在变回来-->
+    <div @click="handleDivClick"
+         :class="{activated:isActivated}"
+    >
+        Hello World
+    </div>
+</div>
+<script>
+    const vm = new Vue({
+        el: "#app",
+        data: {
+            isActivated: false
+        },
+        methods: {
+            handleDivClick: function () {
+                this.isActivated = !this.isActivated
+            }
+        }
+    })
+</script>
+</body>
+</html>

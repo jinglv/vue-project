@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中的条件渲染-v-show</title>
+    <script src="../../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--决定标签是否显示-->
+    <div v-if="show" data-test="v-if">{{message}}</div>
+    <div v-show="show" data-test="v-if">{{message}}</div>
+</div>
+<script>
+    const vm = new Vue({
+        el: "#app",
+        data: {
+            show: false,
+            message: "Hello World"
+        }
+    })
+</script>
+</body>
+</html>

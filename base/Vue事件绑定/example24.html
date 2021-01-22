@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中的事件绑定--self</title>
+    <script src="../../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div @click.self="handleClick">
+        nice
+        <div>hello world</div>
+    </div>
+</div>
+<script>
+    const vm = new Vue({
+        el: "#app",
+        methods: {
+            handleClick: function () {
+                alert(123);
+            }
+        }
+    })
+</script>
+</body>
+</html>

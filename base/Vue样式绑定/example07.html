@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue样式绑定--Class的数组绑定</title>
+    <script src="../../js/vue.js"></script>
+    <style>
+        .activated {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--点击一次，Hello World变成红色，再点击一次在变回来-->
+    <div @click="handleDivClick"
+         :class="[activated, activatedOne]"
+    >
+        Hello World
+    </div>
+</div>
+<script>
+    const vm = new Vue({
+        el: "#app",
+        data: {
+            activated: "",
+            activatedOne: "activated-one"
+        },
+        methods: {
+            handleDivClick: function () {
+                // if (this.activated === "activated") {
+                //     this.activated = ""
+                // } else {
+                //     this.activated = "activated"
+                // }
+                // 三元表达式
+                this.activated = this.activated === "activated" ? "" : "activated"
+            }
+        }
+    })
+</script>
+</body>
+</html>

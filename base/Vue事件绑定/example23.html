@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中的事件绑定--事件修饰符</title>
+    <script src="../../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--form表单默认行为，会跳转到/abc这个地址，现在需求禁止默认行为，不进行跳转，prevent修饰符-->
+    <form action="/abc" @click.prevent>
+        <input type="submit">
+    </form>
+</div>
+<script>
+    const vm = new Vue({
+        el: "#app"
+    })
+</script>
+</body>
+</html>

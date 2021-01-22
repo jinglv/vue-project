@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中的列表渲染-template</title>
+    <script src="../../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <template v-for="(item, index) of list" :key="item.id">
+        <div>
+            {{item.text}}----{{index}}
+        </div>
+        <span>
+            {{item.text}}
+        </span>
+    </template>
+</div>
+<script>
+    const vm = new Vue({
+        el: "#app",
+        data: {
+            list: [
+                {
+                    id: "0001",
+                    text: "hello"
+                },
+                {
+                    id: "0002",
+                    text: "world"
+                },
+                {
+                    id: "0003",
+                    text: "vue"
+                },
+                {
+                    id: "0004",
+                    text: "nodejs"
+                },
+                {
+                    id: "0005",
+                    text: "javascript"
+                }
+            ]
+        }
+    })
+</script>
+</body>
+</html>
